@@ -5111,11 +5111,11 @@ function fetchUrl($_var_22)
 	if ($_var_563 == 'false' && (!preg_match('/^\\+?[1-9][0-9]*$/', $_var_561) || $_var_561 > current_time('timestamp') || $_var_561 + $_var_564 < current_time('timestamp'))) {
 		$_var_566 = @file_get_html_ap($_var_562, $_var_246['3ffc99c206d98be48c6f2e49177d75a9'], Method);
 		if ($_var_566->plaintext == 'INVALID') {
-			fetchUrlMsg(__(pack('H*', '596f757220646f6d61696e'), 'wp-autopost') . '(' . $_var_100 . ')' . __(pack('H*', '206973206e6f7420617574686f72697a65642120506c6561736520766973697420'), 'wp-autopost') . pack('H*', '3c6120687265663d22687474703a2f2f77702d6175746f706f73742e6f726722207461726765743d225f626c616e6b223e77702d6175746f706f73742e6f72673c2f613e') . __(pack('H*', '206f627461696e20617574686f72697a6174696f6e21'), 'wp-autopost'));
+//			fetchUrlMsg(__(pack('H*', '596f757220646f6d61696e'), 'wp-autopost') . '(' . $_var_100 . ')' . __(pack('H*', '206973206e6f7420617574686f72697a65642120506c6561736520766973697420'), 'wp-autopost') . pack('H*', '3c6120687265663d22687474703a2f2f77702d6175746f706f73742e6f726722207461726765743d225f626c616e6b223e77702d6175746f706f73742e6f72673c2f613e') . __(pack('H*', '206f627461696e20617574686f72697a6174696f6e21'), 'wp-autopost'));
 			$_var_560 = 'VERIFIED';
 		} else {
 			if ($_var_566->plaintext == 'CANUPDATE') {
-				fetchUrlMsg(__(pack('H*', '596f757220646f6d61696e'), 'wp-autopost') . '(' . $_var_100 . ')' . __(pack('H*', '206973206e6f7420617574686f72697a65642120506c6561736520766973697420'), 'wp-autopost') . pack('H*', '3c6120687265663d22687474703a2f2f77702d6175746f706f73742e6f726722207461726765743d225f626c616e6b223e77702d6175746f706f73742e6f72673c2f613e') . __(pack('H*', '206f627461696e20617574686f72697a6174696f6e21'), 'wp-autopost'));
+//				fetchUrlMsg(__(pack('H*', '596f757220646f6d61696e'), 'wp-autopost') . '(' . $_var_100 . ')' . __(pack('H*', '206973206e6f7420617574686f72697a65642120506c6561736520766973697420'), 'wp-autopost') . pack('H*', '3c6120687265663d22687474703a2f2f77702d6175746f706f73742e6f726722207461726765743d225f626c616e6b223e77702d6175746f706f73742e6f72673c2f613e') . __(pack('H*', '206f627461696e20617574686f72697a6174696f6e21'), 'wp-autopost'));
 				wpap_transgetnoteinx('wpusercanupdates', current_time('timestamp'));
 				$_var_560 = 'VERIFIED';
 			} else {
